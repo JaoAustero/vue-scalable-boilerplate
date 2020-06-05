@@ -1,16 +1,22 @@
 /**
- * Removes HTML element
- *
- * @param Element HTML
+ * @file A collection of utility DOM
  */
-export const removeElement = function (el)
-{
-    if (typeof el.remove !== 'undefined')
+
+export const HTML = {
+    /**
+     * Removes HTML element.
+     *
+     * @param {*} el - Element HTML
+     */
+    removeElement = function (el)
     {
-        el.remove();
-    }
-    else
-    {
-        el.parentNode.removeChild(el);
-    }
-};
+        if (typeof el.remove !== 'undefined')
+        {
+            el.remove();
+        }
+        else
+        {
+            el.parentNode.removeChild(el);
+        }
+    };
+}
