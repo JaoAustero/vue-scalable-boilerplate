@@ -1,9 +1,6 @@
 /**
  * @file A configuration for `vue` these are new implementation based on new
  * version of `vue` and `vue-cli`.
- * 
- * @author GigaMare Inc
- * @copyright GigaMare Inc 2020
  */
 
 'use strict';
@@ -11,7 +8,6 @@
 // 3rd party dependencies
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const CleanTerminalPlugin = require('clean-terminal-webpack-plugin');
-const path = require('path');
 
 module.exports = {
 
@@ -259,7 +255,7 @@ module.exports = {
          * 
          * @see {@link https://webpack.js.org/configuration/dev-server/#devserverhost}
          */
-        host: 'ftt.gmi-solution.loc',
+        host: 'vue-scalable-boilerplate.loc',
 
         /**
          * Specify a port number to listen for request
@@ -380,5 +376,5 @@ module.exports = {
      * 
      * @see {@link https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint}
      */
-    lintOnSave: process.env.BUILD_MODE !== 'production',
+    lintOnSave: process.env.NODE_ENV !== 'production',
 }
