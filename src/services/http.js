@@ -1,3 +1,7 @@
+/**
+ * @file A collection of http methods
+ */
+
 import { request } from './request';
 
 export const http = {
@@ -5,12 +9,12 @@ export const http = {
         request(url, method)
             .then((response) =>
             {
-                if (process.env.APP_DEBUG) console.log(response);
+                if (process.env.VUE_APP_APP_DEBUG) console.log(response);
                 return response;
             })
             .catch((error) =>
             {
-                console.log(error);
+                if (process.env.VUE_APP_APP_DEBUG) console.log(error);
                 return error;
             }),
 
@@ -18,12 +22,12 @@ export const http = {
         request(url, method, data)
             .then((response) =>
             {
-                if (process.env.APP_DEBUG) console.log(response);
+                if (process.env.VUE_APP_APP_DEBUG) console.log(response);
                 return response;
             })
             .catch((error) =>
             {
-                if (process.env.APP_DEBUG) console.log(error);
+                if (process.env.VUE_APP_APP_DEBUG) console.error(error);
                 return error;
             }),
 
@@ -31,12 +35,25 @@ export const http = {
         request(url, method, data)
             .then((response) =>
             {
-                if (process.env.APP_DEBUG) console.log(response);
+                if (process.env.VUE_APP_APP_DEBUG) console.log(response);
                 return response;
             })
             .catch((error) =>
             {
-                if (process.env.APP_DEBUG) console.log(error);
+                if (process.env.VUE_APP_APP_DEBUG) console.error(error);
+                return error;
+            }),
+
+    delete: (url, data, method = 'DELETE') =>
+        request(url, method, data)
+            .then((response) =>
+            {
+                if (process.env.VUE_APP_APP_DEBUG) console.log(response);
+                return response;
+            })
+            .catch((error) =>
+            {
+                if (process.env.VUE_APP_APP_DEBUG) console.error(error);
                 return error;
             }),
 };
