@@ -1,4 +1,4 @@
-import { joinClass } from '../../utils/class';
+import { Class } from '@/utils';
 
 export default {
     props:
@@ -102,19 +102,19 @@ export default {
     {
         classes()
         {
-            return joinClass(
-                'uis-button',
+            return Class.joinClass(
+                'v-button',
                 this.text
-                    ? `uis-button-text uis-button-text-${this.color}`
+                    ? `i-button-text i-button-text-${this.color}`
                     : this.ghost
-                        ? 'uis-button-ghost'
+                        ? 'i-button-ghost'
                         : this.outline
-                            ? `uis-button-outline uis-button-outline-${this.color}`
-                            : this.color && `uis-button-${this.color}`,
-                this.size && `uis-button-${this.size}`,
+                            ? `i-button-outline i-button-outline-${this.color}`
+                            : this.color && `i-button-${this.color}`,
+                this.size && `i-button-${this.size}`,
                 this.icon
-                    ? 'uis-button-icon'
-                    : this.fullWidth && 'uis-width-1-1'
+                    ? 'i-button-icon'
+                    : this.fullWidth && 'i-width-1-1'
             );
         },
 

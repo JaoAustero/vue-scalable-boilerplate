@@ -6,13 +6,16 @@ import MouseMixins from '@/components/mixins/mouse';
  * @displayName Button
  */
 export default {
-    name: 'UisButton',
+    name: 'IButton',
 
     functional: false,
 
     inheritAttrs: true,
 
-    mixins: [ButtonMixins, MouseMixins],
+    mixins: [
+        ButtonMixins,
+        MouseMixins,
+    ],
 
     render(h)
     {
@@ -24,6 +27,7 @@ export default {
 
                 attrs:
                 {
+                    type: 'button',
                     disabled: this.disabled || this.loading,
                     href: this.isAnchor ? this.href : false,
                 },

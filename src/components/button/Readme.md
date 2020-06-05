@@ -1,5 +1,5 @@
 ### Usage
-To create a button, use the ***uis-button*** component.
+To create a button, use the ***i-button*** component.
 
 &nbsp;
 &nbsp;
@@ -7,7 +7,7 @@ To create a button, use the ***uis-button*** component.
 
 ```vue
 <template>
-    <uis-button>Default</uis-button>
+    <i-button>Default</i-button>
 </template>
 ```
 
@@ -20,30 +20,30 @@ There are several style modifiers applied with the ***:color*** prop.
 ```vue
 <template>
     <div>
-        <uis-button
+        <i-button
             :color="'primary'">
             Primary
-        </uis-button>
+        </i-button>
 
-        <uis-button
+        <i-button
             :color="'secondary'">
             Secondary
-        </uis-button>
+        </i-button>
 
-        <uis-button
+        <i-button
             :color="'success'">
             Success
-        </uis-button>
+        </i-button>
 
-        <uis-button
+        <i-button
             :color="'warning'">
             Warning
-        </uis-button>
+        </i-button>
 
-        <uis-button
+        <i-button
             :color="'danger'">
             Danger
-        </uis-button>
+        </i-button>
     </div>
 </template>
 ```
@@ -57,10 +57,10 @@ Setting the ***:fillWidth*** prop as true it will apply a full width class.
 
 ```vue
 <template>
-    <uis-button
+    <i-button
         :fullWidth="true">
         Full Width
-    </uis-button>
+    </i-button>
 </template>
 ```
 
@@ -73,10 +73,10 @@ If you want anchor with a button style, create ***:href*** and pass a URL it wil
 
 ```vue
 <template>
-    <uis-button
+    <i-button
         :href="'https://www.google.com'">
         Link Button
-    </uis-button>
+    </i-button>
 </template>
 ```
 
@@ -89,10 +89,10 @@ Make the ***:loading*** prop as true it will automatically disabled and change t
 
 ```vue
 <template>
-    <uis-button
+    <i-button
         :loading="true">
         Loading Button
-    </uis-button>
+    </i-button>
 </template>
 ```
 
@@ -105,11 +105,11 @@ If you want outline button style, just pass true boolean on ***:outline*** prop 
 
 ```vue
 <template>
-    <uis-button
+    <i-button
         :color="'primary'"
         :outline="true">
         Outline Primary
-    </uis-button>
+    </i-button>
 </template>
 ```
 
@@ -122,10 +122,10 @@ There are several size modifiers applied with the ***:size*** prop.
 
 ```vue
 <template>
-    <uis-button
+    <i-button
         :size="'large'">
         Large Size
-    </uis-button>
+    </i-button>
 </template>
 ```
 
@@ -138,10 +138,10 @@ These will remove the background and padding. The color will be dependent on ***
 
 ```vue
 <template>
-    <uis-button
+    <i-button
         :color="'primary'"
         :text="true">
         Text Button
-    </uis-button>
+    </i-button>
 </template>
 ```
