@@ -39,7 +39,7 @@ This project includes a `docs` folder with more details on:
 
 ## Frequently Asked Questions
 
-**Why would I use this boilerplate instead of generating a new project with [Vue CLI] (https://github.com/vuejs/vue-cli) or the popular [Vue Enterprise Boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate)?**
+**Why would I use this boilerplate instead of generating a new project with [Vue CLI](https://github.com/vuejs/vue-cli) or the popular [Vue Enterprise Boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate)?**
 
 The boilerplate was designed for scalable projects based on the experiments and experience of myself. The Vue CLI
 asim for flexbility, making it as simple as possible for any team. This will aim to make your code modular
