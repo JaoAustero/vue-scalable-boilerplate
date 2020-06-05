@@ -1,9 +1,6 @@
 /**
  * @file A configuration for `EcmaScript Lint` to enable the rules and formats
  * that needs to be follow. 
- * 
- * @author GigaMare Inc
- * @copyright GigaMare Inc 2020
  */
 
 'use-strict'
@@ -21,27 +18,50 @@ module.exports = {
         browser: true,
     },
 
-    // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
-    // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
-    extends: ['plugin:vue/essential', 'airbnb-base'],
+    /**
+     * Consider switching to `plugin:vue/strongly-recommended` or
+     * `plugin:vue/recommended` for stricter rules.
+     * 
+     * @see {@link https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention}
+     */
+    extends: [
+        'plugin:vue/essential',
+        'airbnb-base',
+    ],
 
-    // required to lint *.vue files
-    plugins: ['vue'],
+    /**
+     * Required lint in all vue files
+     * 
+     * @see {@link https://eslint.org/docs/developer-guide/working-with-plugins}
+     */
+    plugins: [
+        'vue'
+    ],
 
-    // add your custom rules here
+    /**
+     * Add custom rules inside of the object below.
+     * 
+     * @see {@link https://eslint.org/docs/rules/}
+     */
     rules: {
-        // Force the curly brace new line
-        // Reference: https://eslint.org/docs/rules/brace-style
+        /**
+         * Force the curly brace new line
+         * 
+         * @see {@link https://eslint.org/docs/rules/brace-style}
+         */
         'brace-style': ['error', 'allman'],
 
-        // CamelCase
-        // Requires `camelcase` on properties
-        // Reference: https://eslint.org/docs/rules/camelcase
+        /**
+         * Requires `camelcase` on properties
+         * @see {@link https://eslint.org/docs/rules/camelcase}
+         */
         camelcase: 'off',
 
-        // Trailing comma
-        // Force you to add comma on multilines.
-        // Reference: https://eslint.org/docs/rules/comma-dangle
+        /**
+         * Force you to add comma on multilines.
+         *
+         * @see {@link https://eslint.org/docs/rules/comma-dangle}
+         */
         'comma-dangle': [
             'error',
             {
@@ -94,7 +114,13 @@ module.exports = {
          * level greater than switch
          * @see {@link https://eslint.org/docs/rules/indent}
          */
-        'indent': ['error', 4, { "SwitchCase": 1 }],
+        'indent': [
+            'error',
+            4,
+            {
+                "SwitchCase": 1,
+            },
+        ],
 
         /**
          * Enforce new line after arrow function
@@ -119,7 +145,9 @@ module.exports = {
         'import/no-extraneous-dependencies': [
             'error',
             {
-                optionalDependencies: ['test/unit/index.js'],
+                optionalDependencies: [
+                    'test/unit/index.js'
+                ],
             },
         ],
 
@@ -171,7 +199,12 @@ module.exports = {
         'no-console': [
             'error',
             {
-                allow: ['log', 'warn', 'error', 'table'],
+                allow: [
+                    'log',
+                    'warn',
+                    'error',
+                    'table',
+                ],
             },
         ],
 
@@ -196,7 +229,9 @@ module.exports = {
         'no-empty-function': [
             'error',
             {
-                allow: ['constructors'],
+                allow: [
+                    'constructors',
+                ],
             },
         ],
 
@@ -206,7 +241,10 @@ module.exports = {
          * 
          * @see {@link https://eslint.org/docs/rules/no-mixed-spaces-and-tabs}
          */
-        'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
+        'no-mixed-spaces-and-tabs': [
+            'error',
+            'smart-tabs',
+        ],
 
         /**
          * Allow the short hand of if-else condition, Need to use inside of
@@ -322,6 +360,12 @@ module.exports = {
          */
         'object-shorthand': 'off',
 
+        /**
+         * Shadowing is the process by which a local variable shares the
+         * same name as a variable in its containing scope
+         * 
+         * @see {@link https://eslint.org/docs/rules/no-shadow}
+         */
         'no-shadow': 'off',
     },
 };
