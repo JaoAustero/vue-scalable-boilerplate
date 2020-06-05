@@ -42,8 +42,8 @@ This project includes a `docs` folder with more details on:
 **Why would I use this boilerplate instead of generating a new project with [Vue CLI] (https://github.com/vuejs/vue-cli) or the popular [Vue Enterprise Boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate)?**
 
 The boilerplate was designed for scalable projects based on the experiments and experience of myself. The Vue CLI
-asims for flexbility, making it as simple as possible for any team. This will aim to make your code modular
-or breaking into pieces to make it modular, reusable and clean.
+asim for flexbility, making it as simple as possible for any team. This will aim to make your code modular
+or breaking into pieces to make it reusable and stay clean.
 
 I was follower of [Chris Frits](https://github.com/chrisvfritz/) based on his amazing works, some of the
 setup in this boilerplate is similar to his [Enterprise Boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate). The difference was the developers preference and how to keep your file
@@ -56,9 +56,14 @@ by pieces like Lego. This will be update and evolve based on the contributors, s
 suggestion that would make the this boilerplate for better architecture.
 
 **Can you build a Nuext version of boilerplate?**
+
 I have a plan for this one to consider non-spa versions.
 
-## Developed  by
+**Where you can approach me for some suggestions on this boilerplate**
+
+You can message me at [Instagram](https://www.instagram.com/jaoaustero) or in Discord [Vue Land](https://discord.com/invite/HBherRA) just mention me in the channel I'm always active there.
+
+## Maintained by
 <table>
     <tr>
         <td align="center"><a href="https://github.com/JaoAustero"><img height="120px" width="120px" src="https://avatars1.githubusercontent.com/u/15128024?s=460&u=4e7760ebc75d99f333001a253bc23def727eb512&v=4" style="max-width: 100%;"><br><sub><b>Jerald Austero</b></sub></a></td>
