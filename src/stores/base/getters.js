@@ -1,22 +1,35 @@
+/**
+ * @file A base getters that will access and get the value of states
+ */
+
 export const baseGetters = {
 
+    /**
+     * List of items
+     *
+     * @return Array of objects of data
+     */
     items: (state) => state.items,
 
-    isLoading: (state) => (action) => state[`${action}Loading`],
+    /**
+     * Identifiers for loading
+     *
+     * @param {String} State base name
+     * @return Booolean of target state
+     */
+    isLoading: (state) => (action) => state.loading[action],
 
+    /**
+     * Single data that has been selected
+     *
+     * @return Object of data
+     */
     selected: (state) => Object.assign({}, state.selected),
 
-    editForm: (state) => Object.assign({}, state.editForm),
-
-    page(state)
-    {
-        return {
-            total: state.total,
-            from: state.from,
-            to: state.to,
-            currentPage: state.currentPage,
-            lastPage: state.lastPage,
-            url: state.url,
-        };
-    },
+    /**
+     * Get the pagination states
+     *
+     * @param {Object} Pagination states
+     */
+    page: (state) => state.page,
 };
