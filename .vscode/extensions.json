@@ -1,0 +1,22 @@
+{
+    // See http://go.microsoft.com/fwlink/?LinkId=827846
+    // for the documentation about the extension.json format
+    "recommendations":
+    [
+        // Each pair of brackets will have difference colors to easily identify
+        // https://github.com/CoenraadS/Bracket-Pair-Colorizer-2
+        "coenraads.bracket-pair-colorize",
+
+        // Syntax Highlighting for dot envs
+        // https://github.com/zaynali53/DotENV
+        "mikestead.dotenv",
+
+        // Syntax highlighting, autocomplete and snippets for scss/sass
+        // https://github.com/robinbentley/vscode-sass-indented
+        "robinbentley.sass-indented",
+
+        // Syntax highlighting, autocomplete and snippets for vue
+        // https://github.com/hollowtree/vscode-vue-snippets
+        "hollowtree.vue-snippets",
+    ]
+}
