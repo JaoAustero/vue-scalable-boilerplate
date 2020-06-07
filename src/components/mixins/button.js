@@ -103,18 +103,18 @@ export default {
         classes()
         {
             return Class.joinClass(
-                'v-button',
+                'ist-button',
                 this.text
-                    ? `i-button-text i-button-text-${this.color}`
+                    ? `ist-button-text ist-button-text-${this.color}`
                     : this.ghost
-                        ? 'i-button-ghost'
+                        ? 'ist-button-ghost'
                         : this.outline
-                            ? `i-button-outline i-button-outline-${this.color}`
-                            : this.color && `i-button-${this.color}`,
-                this.size && `i-button-${this.size}`,
+                            ? `ist-button-outline ist-button-outline-${this.color}`
+                            : this.color && `ist-button-${this.color}`,
+                this.size && `ist-button-${this.size}`,
                 this.icon
-                    ? 'i-button-icon'
-                    : this.fullWidth && 'i-width-1-1'
+                    ? 'ist-button-icon'
+                    : this.fullWidth && 'ist-width-1-1'
             );
         },
 

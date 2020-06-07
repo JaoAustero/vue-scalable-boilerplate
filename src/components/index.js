@@ -21,7 +21,7 @@ const requireComponent = require.context(
      * Only include "v-" prefixed files and any on these
      * file formats vue, js or jsx
      */
-    /i-[\w-]+\.(?!(vue|js|jsx))?[^.]*$/
+    /ist-[\w-]+\.(?!(vue|js|jsx))?[^.]*$/
 );
 
 requireComponent.keys().forEach((fileName) =>

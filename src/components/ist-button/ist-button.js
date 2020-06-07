@@ -6,7 +6,7 @@ import MouseMixins from '@/components/mixins/mouse';
  * @displayName Button
  */
 export default {
-    name: 'IButton',
+    name: 'IstButton',
 
     functional: false,
 
