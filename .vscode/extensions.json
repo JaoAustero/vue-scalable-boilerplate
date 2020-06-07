@@ -4,19 +4,19 @@
     "recommendations":
     [
         // Each pair of brackets will have difference colors to easily identify
-        // https://github.com/CoenraadS/Bracket-Pair-Colorizer-2
-        "coenraads.bracket-pair-colorize",
+        // https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2
+        "coenraads.bracket-pair-colorizer-2",
 
         // Syntax Highlighting for dot envs
-        // https://github.com/zaynali53/DotENV
+        // https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv
         "mikestead.dotenv",
 
         // Syntax highlighting, autocomplete and snippets for scss/sass
-        // https://github.com/robinbentley/vscode-sass-indented
-        "robinbentley.sass-indented",
+        // https://marketplace.visualstudio.com/items?itemName=Syler.sass-indented
+        "syler.sass-indented",
 
         // Syntax highlighting, autocomplete and snippets for vue
-        // https://github.com/hollowtree/vscode-vue-snippets
+        // https://marketplace.visualstudio.com/items?itemName=hollowtree.vue-snippets
         "hollowtree.vue-snippets",
     ]
 }
