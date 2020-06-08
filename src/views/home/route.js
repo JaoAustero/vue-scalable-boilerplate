@@ -1,7 +1,7 @@
 export default [
     {
-        path: '/home',
+        path: '/',
         name: 'home',
-        components: () => import('@/views/home'),
+        component: () => import('@/views/home'),
     },
 ];

@@ -1,6 +1,5 @@
 // Core
 import Vue from 'vue';
-import VueMeta from 'vue-meta';
 
 // Dependencies
 import axios from 'axios';
@@ -21,16 +20,11 @@ import './components';
 window.axios = axios;
 window.store = store;
 
-// Meta config
-Vue.use(VueMeta, {
-    refreshOnceOnNavigation: true,
-});
-
 Vue.config.productionTip = false;
 
 new Vue({
     el: '#app',
     router,
     store,
-    render: h => h(App),
+    render: (h) => h(App),
 });

@@ -7,5 +7,12 @@
 <script>
 export default {
     name: 'Settings',
+
+    data()
+    {
+        return {
+            metaTitle: 'Settings',
+        };
+    },
 };
 </script>
