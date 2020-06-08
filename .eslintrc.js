@@ -306,6 +306,13 @@ module.exports = {
         'no-undef': 'off',
 
         /**
+         * Turned off the new to avoid creating constant or variable.
+         *
+         * @see {@link https://eslint.org/docs/rules/no-new}
+         */
+        'no-new': 'off',
+
+        /**
          * Enforce to break the long import object
          *
          * @see {@link https://eslint.org/docs/rules/object-curly-newline}
