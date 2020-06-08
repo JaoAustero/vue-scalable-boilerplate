@@ -1,6 +1,6 @@
 /**
  * @file A configuration for `EcmaScript Lint` to enable the rules and formats
- * that needs to be follow. 
+ * that needs to be follow.
  */
 
 'use-strict'
@@ -21,7 +21,7 @@ module.exports = {
     /**
      * Consider switching to `plugin:vue/strongly-recommended` or
      * `plugin:vue/recommended` for stricter rules.
-     * 
+     *
      * @see {@link https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention}
      */
     extends: [
@@ -31,7 +31,7 @@ module.exports = {
 
     /**
      * Required lint in all vue files
-     * 
+     *
      * @see {@link https://eslint.org/docs/developer-guide/working-with-plugins}
      */
     plugins: [
@@ -40,13 +40,20 @@ module.exports = {
 
     /**
      * Add custom rules inside of the object below.
-     * 
+     *
      * @see {@link https://eslint.org/docs/rules/}
      */
     rules: {
         /**
+         * Turned off the arrow style
+         *
+         * @see {@link https://eslint.org/docs/rules/prefer-arrow-callback}
+         */
+        'arrow-body-style': 'off',
+
+        /**
          * Force the curly brace new line
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/brace-style}
          */
         'brace-style': ['error', 'allman'],
@@ -75,7 +82,7 @@ module.exports = {
 
         /**
          * Spacing around commas improves readability of a list of items
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/comma-spacing}
          */
         'comma-spacing': [
@@ -88,29 +95,36 @@ module.exports = {
 
         /**
          * Requires comma after of the text not on new line
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/comma-style}
          */
         'comma-style': ['error', 'last'],
 
         /**
+         * Requires comma after of the text not on new line
+         *
+         * @see {@link https://eslint.org/docs/rules/consistent-return}
+         */
+        'consistent-return': 'off',
+
+        /**
          * Allow to assigned name on functions if it's required on ES6
          * environment
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/func-names}
          */
         'func-names': ['error', 'as-needed'],
 
         /**
-         * We override the configuration of airbnb, because 
+         * We override the configuration of airbnb, because
          * Some cases we need to export named source.
-         * 
+         *
          * @see {@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md}
          */
         "import/prefer-default-export": "off",
 
         /**
-         * Requires 4 space; We enforce case to have indent 
+         * Requires 4 space; We enforce case to have indent
          * level greater than switch
          * @see {@link https://eslint.org/docs/rules/indent}
          */
@@ -124,7 +138,7 @@ module.exports = {
 
         /**
          * Enforce new line after arrow function
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/implicit-arrow-linebreak}
          */
         'implicit-arrow-linebreak': 'off',
@@ -132,14 +146,14 @@ module.exports = {
         /**
          * Ensures an imported module can be resolved to a module on the local
          * filesystem, as defined by standard Node require.resolve behavior.
-         * 
+         *
          * @see {@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md}
          */
         'import/no-unresolved': 'off',
 
         /**
          * Configurations for test files
-         * 
+         *
          * @see {@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md}
          */
         'import/no-extraneous-dependencies': [
@@ -153,7 +167,7 @@ module.exports = {
 
         /**
          * Enforce consistent line ending
-         *  
+         *
          * @see {@link https://eslint.org/docs/rules/linebreak-style}
          */
         'linebreak-style': 'off',
@@ -161,7 +175,7 @@ module.exports = {
         /**
          * Enforce to break the long line of code to make the code more
          * readable, But ignores some cases like import with very long path
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/max-len}
          */
         'max-len': [
@@ -178,7 +192,7 @@ module.exports = {
 
         /**
          * Requires captical letter on constructor or new instance
-         * 
+         *
          * @link {@see https://eslint.org/docs/rules/new-cap}
          */
         'new-cap': [
@@ -191,9 +205,9 @@ module.exports = {
         ],
 
         /**
-         * Let console to be use for debuggine before production make the 
+         * Let console to be use for debuggine before production make the
          * APP_DEBUG to false in .env to hide consoles
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/no-console}
          */
         'no-console': [
@@ -211,7 +225,7 @@ module.exports = {
         /**
          * Doesn't allow empty conditions like try catch if else, white,
          * and switch case
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/no-empty}
          */
         'no-empty': [
@@ -223,7 +237,7 @@ module.exports = {
 
         /**
          * Doesn't allow empty functions, except constructor
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/no-empty-function}
          */
         'no-empty-function': [
@@ -238,7 +252,7 @@ module.exports = {
 
         /**
          * Disallow space and tabs together to avoid inconsistent spaces
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/no-mixed-spaces-and-tabs}
          */
         'no-mixed-spaces-and-tabs': [
@@ -249,7 +263,7 @@ module.exports = {
         /**
          * Allow the short hand of if-else condition, Need to use inside of
          * return, in JSX doesn't saccept if-else long-hand condition
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/no-nested-ternary}
          */
         'no-nested-ternary': 'off',
@@ -257,14 +271,22 @@ module.exports = {
         /**
          * Allow ++ over +=1 for team preference and overrides the airbnb
          * default configuration
-         * 
+         *
          * @see {@link https://eslint.org/docs/6.0.0/rules/no-plusplus}
          */
         "no-plusplus": 'off',
 
         /**
+         * Allow the short hand of if-else condition, Need to use inside of
+         * return, in JSX doesn't saccept if-else long-hand condition
+         *
+         * @see {@link https://eslint.org/docs/rules/no-nested-ternary}
+         */
+        'no-nested-ternary': 'off',
+
+        /**
          * Disallow spaces after {}
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/no-trailing-spaces}
          */
         'no-trailing-spaces': [
@@ -292,7 +314,7 @@ module.exports = {
 
         /**
          * Force to use spread object than Object.assign
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/prefer-object-spread}
          */
         'prefer-object-spread': 'off',
@@ -300,21 +322,21 @@ module.exports = {
         /**
          * Enforces usage of destructuring instead of accessing a property
          * through a member expression.
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/prefer-destructuring}
          */
         'prefer-destructuring': 'off',
 
         /**
          * Enforce all object properties should wrap on single quotes
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/quote-props}
          */
         'quote-props': 'off',
 
         /**
          * Requires semi colon after function
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/semi-style}
          */
         'semi-style': ['error', 'last'],
@@ -323,7 +345,7 @@ module.exports = {
 
         /**
          * Don't require estension when importing
-         * 
+         *
          * @see {@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md}
          */
         'import/extensions': 'never',
@@ -331,7 +353,7 @@ module.exports = {
         /**
          * disallow reassignment of function parameters and disallow parameter
          * object manipulation except for specific exclusions
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/no-param-reassign}
          */
         'no-param-reassign': [
@@ -348,14 +370,14 @@ module.exports = {
 
         /**
          * Allow debugger during development
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/no-debugger}
          */
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
 
         /**
          * Set the rules for shorthand in object
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/object-shorthand}
          */
         'object-shorthand': 'off',
@@ -363,7 +385,7 @@ module.exports = {
         /**
          * Shadowing is the process by which a local variable shares the
          * same name as a variable in its containing scope
-         * 
+         *
          * @see {@link https://eslint.org/docs/rules/no-shadow}
          */
         'no-shadow': 'off',
