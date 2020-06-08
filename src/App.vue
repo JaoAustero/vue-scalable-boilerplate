@@ -1,68 +1,12 @@
 <template>
     <div id="app">
-        <uis-toast
-                :messages="getToastMessages"/>
-
-        <div
-            v-if="!isAuthenticated">
-            <Auth />
-        </div>
-
-        <div v-else>
-            <app-navbar />
-            <app-sidebar />
-            
-            <main class="uis-main-wrapper">
-                <transition
-                    name="uis-fade"
-                    mode="out-in">
-                    <router-view />
-                </transition>
-            </main>
-        </div>
-
-        <delete-modal />
+        Hello World
     </div>
 </template>
 
 <script>
-// Vuex
-import { mapGetters } from 'vuex';
-
-// Auth
-import Auth from '@/views/auth';
-
-// Layouts
-import AppNavbar from '@/views/layouts/navbar';
-import AppSidebar from '@/views/layouts/sidebar';
-
-// Global Modal
-import DeleteModal from '@/views/layouts/modal/delete';
-
 export default {
     name: 'app',
-
-    data()
-    {
-        return {
-            isAuthenticated: true,
-        };
-    },
-
-    components:
-    {
-        Auth,
-        AppNavbar,
-        AppSidebar,
-        DeleteModal,
-    },
-
-    computed:
-    {
-        ...mapGetters({
-            getToastMessages: 'global/getToastMessages',
-        }),
-    },
 };
 </script>
 
