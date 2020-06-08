@@ -9,7 +9,7 @@ export const Class = {
      * @param {*} args - spread all classes
      * @return One string classnames
      */
-    joinClass = function (...args)
+    joinClass: (...args) =>
     {
         let classnames = '';
 

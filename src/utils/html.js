@@ -8,7 +8,7 @@ export const HTML = {
      *
      * @param {*} el - Element HTML
      */
-    removeElement = function (el)
+    removeElement: (el) =>
     {
         if (typeof el.remove !== 'undefined')
         {
@@ -18,5 +18,5 @@ export const HTML = {
         {
             el.parentNode.removeChild(el);
         }
-    };
-}
+    },
+};
