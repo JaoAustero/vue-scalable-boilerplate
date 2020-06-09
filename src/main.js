@@ -13,8 +13,11 @@ import { router } from './router';
 // Entry file
 import App from './App.vue';
 
-// UIS Components
+// Components
 import './components';
+
+// Directives
+import './directives';
 
 // Global properties
 window.axios = axios;
